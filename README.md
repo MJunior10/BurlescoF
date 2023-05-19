@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # ACESS FRONTEND
 
-LINK PARA ACESSO DO FRONTEND [AQUI](https://localhost:4200)
+LINK PARA ACESSO DO FRONTEND [AQUI]( http://localhost:4200/)
 
 ## Development server
 
