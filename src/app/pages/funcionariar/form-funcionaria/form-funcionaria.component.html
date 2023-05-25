@@ -1,0 +1,52 @@
+<form
+  [formGroup]="formGroup"
+  (ngSubmit)="onSubmit()"
+  class="form"
+>
+  <div class="formFuncionaria">
+    <mat-form-field>
+      <mat-label>Nome:</mat-label>
+      <input matInput formControlName="nome">
+      <mat-error *ngIf="handleError('nome', 'required')">
+        O nome da Funcionaria é obrigatório
+      </mat-error>
+      <mat-error *ngIf="handleError('nome', 'minlength')">
+        Mínimo 3 caracteres
+      </mat-error>
+      <mat-error *ngIf="handleError('nome', 'maxlength')">
+        Máximo 50 caracteres
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Apelido:</mat-label>
+      <input matInput formControlName="apelido">
+      <mat-error *ngIf="handleError('apelido', 'required')">
+        o Nome de trabalho da funcionaria e obrigatorio
+      </mat-error>
+      <mat-error *ngIf="handleError('apelido', 'minlength')">
+        Mínimo 3 caracteres
+      </mat-error>
+      <mat-error *ngIf="handleError('apelido', 'maxlength')">
+        Máximo 50 caracteres
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Valor Atendimento:</mat-label>
+      <input matInput formControlName="valorAtendimento">
+      <mat-error *ngIf="handleError('valorAtendimento', 'required')">
+        O valor do atendimento e obrigatorio
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Data de Nascimento</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="dataNascimento">
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-error *ngIf="handleError('dataNascimento', 'required')">
+        Data de Nascimento é Obrigatoria
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Salvar</button>
+  </div>
+</form>
