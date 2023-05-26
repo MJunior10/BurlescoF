@@ -16,7 +16,7 @@ import {
   styleUrls: ['./funcionaria.component.scss']
 })
 export class FuncionariaComponent  implements OnInit {
-  colunasMostrar = ['id', 'nome', 'apelido', 'valorAtendimento', 'supervisor','especialidade', 'dataNascimento'];
+  colunasMostrar = ['id', 'nome', 'apelido', 'valorAtendimento', 'supervisor','especialidade', 'dataNascimento','acao'];
   funcionariaListaDataSource : MatTableDataSource<FuncionariaDto> = new MatTableDataSource<FuncionariaDto>([]);
   constructor(
     public funcionariaService: FuncionariaControllerService,
@@ -31,6 +31,7 @@ export class FuncionariaComponent  implements OnInit {
 
   private buscarDados() {
     this.funcionariaService.listAll().subscribe(data => {
+      console.log(data);
       this.funcionariaListaDataSource.data = data;
     })
   }
@@ -58,7 +59,7 @@ export class FuncionariaComponent  implements OnInit {
     const dialogRef = this.dialog.open(ConfirmationDialog, {
       data: {
         titulo: 'Confirmar?',
-        mensagem: `A exclusão de: ${funcionariaDto.nome} (ID: ${funcionariaDto.id})?`,
+        mensagem: `A exclusão de: ${funcionariaDto.nome} ${funcionariaDto.apelido}?`,
         textoBotoes: {
           ok: 'Confirmar',
           cancel: 'Cancelar',

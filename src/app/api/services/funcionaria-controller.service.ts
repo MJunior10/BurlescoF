@@ -204,7 +204,7 @@ export class FuncionariaControllerService extends BaseService {
   static readonly ListAllPath = '/api/v1/funcionaria';
 
   /**
-   * Listagem geral de Funcionarias
+   * Metodo utilizado para listagem geral de funcionarias
    *
    * This method provides access to the full `HttpResponse`, allowing access to response headers.
    * To access only the response body, use `listAll()` instead.
@@ -215,26 +215,26 @@ export class FuncionariaControllerService extends BaseService {
   },
   context?: HttpContext
 
-): Observable<StrictHttpResponse<Array<FuncionariaListaDto>>> {
+): Observable<StrictHttpResponse<Array<FuncionariaDto>>> {
 
     const rb = new RequestBuilder(this.rootUrl, FuncionariaControllerService.ListAllPath, 'get');
     if (params) {
     }
 
     return this.http.request(rb.build({
-      responseType: 'blob',
-      accept: '*/*',
+      responseType: 'json',
+      accept: 'application/json',
       context: context
     })).pipe(
       filter((r: any) => r instanceof HttpResponse),
       map((r: HttpResponse<any>) => {
-        return r as StrictHttpResponse<Array<FuncionariaListaDto>>;
+        return r as StrictHttpResponse<Array<FuncionariaDto>>;
       })
     );
   }
 
   /**
-   * Listagem geral de Funcionarias
+   * Metodo utilizado para listagem geral de funcionarias
    *
    * This method provides access only to the response body.
    * To access the full response (for headers, for example), `listAll$Response()` instead.
@@ -245,10 +245,10 @@ export class FuncionariaControllerService extends BaseService {
   },
   context?: HttpContext
 
-): Observable<Array<FuncionariaListaDto>> {
+): Observable<Array<FuncionariaDto>> {
 
     return this.listAll$Response(params,context).pipe(
-      map((r: StrictHttpResponse<Array<FuncionariaListaDto>>) => r.body as Array<FuncionariaListaDto>)
+      map((r: StrictHttpResponse<Array<FuncionariaDto>>) => r.body as Array<FuncionariaDto>)
     );
   }
 

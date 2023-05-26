@@ -62,7 +62,7 @@ export class FormFuncionariaComponent {
     const dialogRef = this.dialog.open(ConfirmationDialog, {
       data: {
         titulo: 'Mensagem!!!',
-        mensagem: `Inclusão de: ${funcionariaDto.nome} realiza com sucesso!`,
+        mensagem: `Inclusão de:${funcionariaDto.nome} realiza com sucesso!`,
         textoBotoes: {
           ok: 'ok',
         },

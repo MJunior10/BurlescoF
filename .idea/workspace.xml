@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="152e04f0-177f-40de-a745-5d8fc320844a" name="Changes" comment="Interface Alterada">
+      <change afterPath="$PROJECT_DIR$/src/leque.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/models/funcionaria-lista-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/models/funcionaria-lista-dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/services/funcionaria-controller.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/services/funcionaria-controller.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,25 +34,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/martins/Downloads/BURLESCO",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "C:/Users/martins/Downloads/Portable20231/PortableNodeJS202301/nvm/v18.11.0/node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "C:\\Users\\martins\\Downloads\\Burlesco-Frontend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/martins/Downloads/BURLESCO&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;C:/Users/martins/Downloads/Portable20231/PortableNodeJS202301/nvm/v18.11.0/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\martins\\Downloads\\Burlesco-Frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\martins\Downloads\Burlesco-Frontend" />
@@ -105,7 +107,8 @@
       <workItem from="1684848005055" duration="3719000" />
       <workItem from="1684932876678" duration="15209000" />
       <workItem from="1685040485154" duration="4145000" />
-      <workItem from="1685058859478" duration="4897000" />
+      <workItem from="1685058859478" duration="6281000" />
+      <workItem from="1685138668790" duration="4488000" />
     </task>
     <task id="LOCAL-00001" summary="Icon, e alterações iniciais">
       <created>1684714804934</created>
@@ -128,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685050271265</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Interface Alterada">
+      <created>1685064084273</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685064084273</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
