@@ -16,7 +16,7 @@ import {
   styleUrls: ['./funcionaria.component.scss']
 })
 export class FuncionariaComponent  implements OnInit {
-  colunasMostrar = ['id', 'nome', 'apelido', 'valorAtendimento', 'supervisor', 'dataNascimento'];
+  colunasMostrar = ['id', 'nome', 'apelido', 'valorAtendimento', 'supervisor','especialidade', 'dataNascimento'];
   funcionariaListaDataSource : MatTableDataSource<FuncionariaDto> = new MatTableDataSource<FuncionariaDto>([]);
   constructor(
     public funcionariaService: FuncionariaControllerService,

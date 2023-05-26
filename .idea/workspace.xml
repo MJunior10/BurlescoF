@@ -4,46 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152e04f0-177f-40de-a745-5d8fc320844a" name="Changes" comment="Icon, e alterações iniciais">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/api-configuration.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/api.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/base-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/models.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/models/funcionaria-dados-alteravel-dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/models/funcionaria-dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/models/funcionaria-lista-dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/request-builder.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/services.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/services/funcionaria-controller.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/strict-http-response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/confirmation-dialog/confirmation-dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/confirmation-dialog/confirmation-dialog.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/confirmation-dialog/confirmation-dialog.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/home/home.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/home/home.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/core/home/home.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionariar-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionariar.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+    <list default="true" id="152e04f0-177f-40de-a745-5d8fc320844a" name="Changes" comment="Interface Alterada">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +46,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "C:/Users/martins/Downloads/Portable20231/PortableNodeJS202301/nvm/v18.11.0/node",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "ts.external.directory.path": "C:\\Users\\martins\\Downloads\\Burlesco-Frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -136,7 +104,8 @@
       <workItem from="1684793829783" duration="2843000" />
       <workItem from="1684848005055" duration="3719000" />
       <workItem from="1684932876678" duration="15209000" />
-      <workItem from="1685040485154" duration="3161000" />
+      <workItem from="1685040485154" duration="4145000" />
+      <workItem from="1685058859478" duration="4897000" />
     </task>
     <task id="LOCAL-00001" summary="Icon, e alterações iniciais">
       <created>1684714804934</created>
@@ -145,7 +114,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684714804934</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Interface Alterada">
+      <created>1685050259443</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685050259444</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Interface Alterada">
+      <created>1685050271265</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685050271265</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Icon, e alterações iniciais" />
-    <option name="LAST_COMMIT_MESSAGE" value="Icon, e alterações iniciais" />
+    <MESSAGE value="Interface Alterada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interface Alterada" />
   </component>
 </project>

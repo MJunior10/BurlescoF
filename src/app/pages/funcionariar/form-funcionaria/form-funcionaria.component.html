@@ -8,7 +8,7 @@
       <mat-label>Nome:</mat-label>
       <input matInput formControlName="nome">
       <mat-error *ngIf="handleError('nome', 'required')">
-        O nome da Funcionaria é obrigatório
+        Obrigatorio informar nome
       </mat-error>
       <mat-error *ngIf="handleError('nome', 'minlength')">
         Mínimo 3 caracteres
@@ -21,7 +21,7 @@
       <mat-label>Apelido:</mat-label>
       <input matInput formControlName="apelido">
       <mat-error *ngIf="handleError('apelido', 'required')">
-        o Nome de trabalho da funcionaria e obrigatorio
+        Obrigatorio informar apelido
       </mat-error>
       <mat-error *ngIf="handleError('apelido', 'minlength')">
         Mínimo 3 caracteres
@@ -31,16 +31,46 @@
       </mat-error>
     </mat-form-field>
     <mat-form-field>
+      <mat-label>Supervisor:</mat-label>
+      <input matInput formControlName="supervisor">
+      <mat-error *ngIf="handleError('supervisor', 'required')">
+        Obrigatorio informar Supervisor
+      </mat-error>
+      <mat-error *ngIf="handleError('supervisor', 'minlength')">
+        Mínimo 3 caracteres
+      </mat-error>
+      <mat-error *ngIf="handleError('supervisor', 'maxlength')">
+        Máximo 50 caracteres
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Especialidade:</mat-label>
+      <input matInput formControlName="especialidade">
+      <mat-error *ngIf="handleError('especialidade', 'required')">
+        Obrigatorio informar especialidade
+      </mat-error>
+      <mat-error *ngIf="handleError('especialidade', 'minlength')">
+        Mínimo 3 caracteres
+      </mat-error>
+      <mat-error *ngIf="handleError('especialidade', 'maxlength')">
+        Máximo 50 caracteres
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
       <mat-label>Valor Atendimento:</mat-label>
       <input matInput formControlName="valorAtendimento">
       <mat-error *ngIf="handleError('valorAtendimento', 'required')">
         O valor do atendimento e obrigatorio
+      </mat-error>
+      <mat-error *ngIf="handleError('valorAtendimento', 'min')">
+        O valor não pode ser menor que 100,00
       </mat-error>
     </mat-form-field>
     <mat-form-field>
       <mat-label>Data de Nascimento</mat-label>
       <input matInput [matDatepicker]="picker" formControlName="dataNascimento">
       <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+
       <mat-datepicker #picker></mat-datepicker>
       <mat-error *ngIf="handleError('dataNascimento', 'required')">
         Data de Nascimento é Obrigatoria

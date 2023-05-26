@@ -6,6 +6,7 @@ import {FuncionariaControllerService} from "../../../api/services/funcionaria-co
 import {FuncionariaDto} from "../../../api/models/funcionaria-dto";
 import {ConfirmationDialog, ConfirmationDialogResult} from "../../../core/confirmation-dialog/confirmation-dialog.component";
 import {min} from "rxjs";
+ import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-form-funcionaria',
@@ -17,6 +18,8 @@ export class FormFuncionariaComponent {
 
   constructor(
     private formBuilder: FormBuilder,
+     private router: Router,
+     private route: ActivatedRoute,
     private _adapter: DateAdapter<any>,
     public funcionariaService: FuncionariaControllerService,
     private dialog: MatDialog,
@@ -29,6 +32,7 @@ export class FormFuncionariaComponent {
       nome: [null, [Validators.required, Validators.minLength(3), Validators.maxLength(50)]],
       apelido: [null, [Validators.required, Validators.minLength(3), Validators.maxLength(50)]],
       supervisor: [null, [Validators.required, Validators.minLength(3), Validators.maxLength(50)]],
+      especialidade: [null, [Validators.required, Validators.minLength(3), Validators.maxLength(50)]],
       valorAtendimento: [null, [Validators.required, Validators.min(100)]],
       dataNascimento: [new Date(), Validators.required],
 
@@ -42,12 +46,12 @@ export class FormFuncionariaComponent {
         .subscribe( retorno =>{
           console.log("Retorno:",retorno);
           this.confirmarInclusao(retorno);
+          this.router.navigate(["/funcionariar"]);
         }, erro =>{
           console.log("Erro:"+erro);
           alert("Erro ao incluir!");
         })
     }
-
   }
 
   public handleError = (controlName: string, errorName: string) => {
@@ -58,7 +62,7 @@ export class FormFuncionariaComponent {
     const dialogRef = this.dialog.open(ConfirmationDialog, {
       data: {
         titulo: 'Mensagem!!!',
-        mensagem: `Inclusão de: ${funcionariaDto.nome} (ID: ${funcionariaDto.id}) realiza com sucesso!`,
+        mensagem: `Inclusão de: ${funcionariaDto.nome} realiza com sucesso!`,
         textoBotoes: {
           ok: 'ok',
         },
