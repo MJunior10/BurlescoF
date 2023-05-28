@@ -11,7 +11,6 @@ import { map, filter } from 'rxjs/operators';
 
 import { FuncionariaDto } from '../models/funcionaria-dto';
 import { FuncionariaDadosAlteravelDto } from '../models/funcionaria-dados-alteravel-dto';
-import { FuncionariaListaDto } from '../models/funcionaria-lista-dto';
 
 @Injectable({
   providedIn: 'root',
@@ -258,7 +257,7 @@ export class FuncionariaControllerService extends BaseService {
   static readonly IncluirPath = '/api/v1/funcionaria';
 
   /**
-   * Metodo utilizado para realizar a inclusão de uma Funcionaria
+   * Método utilizado para realizar a inclusão de uma funcionaria
    *
    * This method provides access to the full `HttpResponse`, allowing access to response headers.
    * To access only the response body, use `incluir()` instead.
@@ -278,8 +277,8 @@ export class FuncionariaControllerService extends BaseService {
     }
 
     return this.http.request(rb.build({
-      responseType: 'blob',
-      accept: '*/*',
+      responseType: 'json',
+      accept: 'application/json',
       context: context
     })).pipe(
       filter((r: any) => r instanceof HttpResponse),
@@ -290,7 +289,7 @@ export class FuncionariaControllerService extends BaseService {
   }
 
   /**
-   * Metodo utilizado para realizar a inclusão de uma Funcionaria
+   * Método utilizado para realizar a inclusão de uma funcionaria
    *
    * This method provides access only to the response body.
    * To access the full response (for headers, for example), `incluir$Response()` instead.
@@ -315,7 +314,7 @@ export class FuncionariaControllerService extends BaseService {
   static readonly PesquisarPath = '/api/v1/funcionaria/pesquisar';
 
   /**
-   * Busca funcionaria pelos dados informados
+   * Busca funcionarias pelos dados informados
    *
    * This method provides access to the full `HttpResponse`, allowing access to response headers.
    * To access only the response body, use `pesquisar()` instead.
@@ -327,7 +326,7 @@ export class FuncionariaControllerService extends BaseService {
   },
   context?: HttpContext
 
-): Observable<StrictHttpResponse<Array<FuncionariaListaDto>>> {
+): Observable<StrictHttpResponse<Array<FuncionariaDto>>> {
 
     const rb = new RequestBuilder(this.rootUrl, FuncionariaControllerService.PesquisarPath, 'post');
     if (params) {
@@ -335,19 +334,19 @@ export class FuncionariaControllerService extends BaseService {
     }
 
     return this.http.request(rb.build({
-      responseType: 'blob',
-      accept: '*/*',
+      responseType: 'json',
+      accept: 'application/json',
       context: context
     })).pipe(
       filter((r: any) => r instanceof HttpResponse),
       map((r: HttpResponse<any>) => {
-        return r as StrictHttpResponse<Array<FuncionariaListaDto>>;
+        return r as StrictHttpResponse<Array<FuncionariaDto>>;
       })
     );
   }
 
   /**
-   * Busca funcionaria pelos dados informados
+   * Busca funcionarias pelos dados informados
    *
    * This method provides access only to the response body.
    * To access the full response (for headers, for example), `pesquisar$Response()` instead.
@@ -359,10 +358,10 @@ export class FuncionariaControllerService extends BaseService {
   },
   context?: HttpContext
 
-): Observable<Array<FuncionariaListaDto>> {
+): Observable<Array<FuncionariaDto>> {
 
     return this.pesquisar$Response(params,context).pipe(
-      map((r: StrictHttpResponse<Array<FuncionariaListaDto>>) => r.body as Array<FuncionariaListaDto>)
+      map((r: StrictHttpResponse<Array<FuncionariaDto>>) => r.body as Array<FuncionariaDto>)
     );
   }
 

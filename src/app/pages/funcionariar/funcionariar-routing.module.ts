@@ -17,7 +17,12 @@ export const funcionariaRoutes: Routes = [
       {
         path: "novo",
         component: FormFuncionariaComponent
-      }]
+      },
+      {
+        path: ":codigo",
+        component: FormFuncionariaComponent
+      }
+      ]
   }
 ];
 
