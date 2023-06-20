@@ -18,6 +18,7 @@ export class FormFuncionariaComponent {
   public readonly ACAO_INCLUIR = "Incluir";
   public readonly ACAO_EDITAR = "Editar";
 
+
   acao : string = this.ACAO_INCLUIR;
   id!: number;
 
@@ -125,6 +126,8 @@ export class FormFuncionariaComponent {
         this.showError(this.ACAO_EDITAR);
       })
   }
+
+
 
   protected readonly min = min;
 }

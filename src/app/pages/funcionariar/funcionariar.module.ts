@@ -17,12 +17,11 @@ import {MatButtonModule} from "@angular/material/button";
 import {HomeFuncionariaComponent} from "./home/home.component";
 
 
-
 @NgModule({
   declarations: [
     HomeFuncionariaComponent,
     FuncionariaComponent,
-    FormFuncionariaComponent
+    FormFuncionariaComponent,
   ],
   imports: [
     CommonModule,

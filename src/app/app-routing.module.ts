@@ -7,10 +7,8 @@ const routes: Routes = [
   {
     path: "",
     component: HomeComponent,
-     children:[...funcionariaRoutes]
-
-  }
-
+    children:[...funcionariaRoutes]
+  },
 ];
 
 @NgModule({

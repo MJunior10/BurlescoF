@@ -23,14 +23,14 @@
 <!--      <mat-icon>home</mat-icon>-->
 <!--      <span>Home</span>-->
 <!--    </button>-->
-    <button mat-button class="menu-button" routerLink="/funcionariar">
+    <button mat-button class="menu-button" [routerLink]="['/funcionariar','novo']">
       <mat-icon>person</mat-icon>
-      <span>Funcionaria</span>
+      <span>Cadastrar</span>
     </button>
-<!--    <button mat-button class="menu-button" routerLink="/about">-->
-<!--      <mat-icon>info</mat-icon>-->
-<!--      <span>About</span>-->
-<!--    </button>-->
+   <button mat-button class="menu-button" routerLink="/detalhes">
+      <mat-icon>description</mat-icon>
+     <span>Funcionaria</span>
+   </button>
 
     <mat-divider></mat-divider>
 
