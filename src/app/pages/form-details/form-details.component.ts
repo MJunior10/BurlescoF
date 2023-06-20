@@ -30,4 +30,5 @@ export class FormDetailsComponent implements OnInit  {
       this.funcionariaListaDataSource.data = data;
     })
   }
+
 }

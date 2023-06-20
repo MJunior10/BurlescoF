@@ -15,6 +15,7 @@ import {FormFuncionariaComponent} from "./form-funcionaria/form-funcionaria.comp
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {HomeFuncionariaComponent} from "./home/home.component";
+import {CardDetailsComponent} from "./card-details/card-details.component";
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import {HomeFuncionariaComponent} from "./home/home.component";
     HomeFuncionariaComponent,
     FuncionariaComponent,
     FormFuncionariaComponent,
+
   ],
   imports: [
     CommonModule,
@@ -37,6 +39,7 @@ import {HomeFuncionariaComponent} from "./home/home.component";
     ReactiveFormsModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    CardDetailsComponent,
   ]
 })
 export class FuncionariarModule { }
