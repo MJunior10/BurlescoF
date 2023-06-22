@@ -4,6 +4,8 @@ import {FuncionariaDto} from "../../api/models/funcionaria-dto";
 import {FuncionariaControllerService} from "../../api/services/funcionaria-controller.service";
 import {MatDialog} from "@angular/material/dialog";
 import {MatSnackBar} from "@angular/material/snack-bar";
+import {ConfirmationDialog} from "../../core/confirmation-dialog/confirmation-dialog.component";
+import {CardDetailsComponent} from "../card-details/card-details.component";
 
 @Component({
   selector: 'app-form-details',

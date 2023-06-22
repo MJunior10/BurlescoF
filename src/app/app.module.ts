@@ -20,6 +20,7 @@ import {HomeComponent} from "./core/home/home.component";
 import {FormDetailsComponent} from "./pages/form-details/form-details.component";
 import {MatTableModule} from "@angular/material/table";
 import {MatExpansionModule} from "@angular/material/expansion";
+import {CardDetailsComponent} from "./pages/card-details/card-details.component";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import {MatExpansionModule} from "@angular/material/expansion";
     HomeComponent,
     ConfirmationDialog,
     FormDetailsComponent,
-    // CardDetailsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -44,6 +45,7 @@ import {MatExpansionModule} from "@angular/material/expansion";
     MatSnackBarModule,
     MatTableModule,
     MatExpansionModule,
+    CardDetailsComponent,
   ],
   providers: [
     {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'outline'}}
