@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152e04f0-177f-40de-a745-5d8fc320844a" name="Changes" comment="FUNCIONA CARALHO">
+    <list default="true" id="152e04f0-177f-40de-a745-5d8fc320844a" name="Changes" comment="FÉ EM DEUS QUE ELE E JUSTO EI IRMAO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/card-details/card-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/card-details/card-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/card-details/card-details.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/card-details/card-details.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/card-details/card-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/card-details/card-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionariar-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionariar-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionariar.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionariar.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/card-details/card-details.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/card-details/card-details.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/card-details/card-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/card-details/card-details.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +119,9 @@
       <workItem from="1687303556896" duration="6384000" />
       <workItem from="1687344833266" duration="5638000" />
       <workItem from="1687471480825" duration="658000" />
+      <workItem from="1687472376528" duration="20000" />
+      <workItem from="1687478815789" duration="1695000" />
+      <workItem from="1687480701339" duration="407000" />
     </task>
     <task id="LOCAL-00001" summary="Icon, e alterações iniciais">
       <created>1684714804934</created>
@@ -189,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687302200263</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="FÉ EM DEUS QUE ELE E JUSTO EI IRMAO">
+      <created>1687472391302</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687472391302</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +216,7 @@
     <MESSAGE value="Interface Alterada" />
     <MESSAGE value="Criação e implementação do metodo Alterar" />
     <MESSAGE value="FUNCIONA CARALHO" />
-    <option name="LAST_COMMIT_MESSAGE" value="FUNCIONA CARALHO" />
+    <MESSAGE value="FÉ EM DEUS QUE ELE E JUSTO EI IRMAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="FÉ EM DEUS QUE ELE E JUSTO EI IRMAO" />
   </component>
 </project>

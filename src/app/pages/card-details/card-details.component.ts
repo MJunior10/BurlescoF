@@ -57,7 +57,7 @@ export class CardDetailsComponent{
   }
 
   private obterDados() {
-    const paramId = this.route.snapshot.paramMap.get('codigo');
+    const paramId = this.route.snapshot.paramMap.get('id');
     if (paramId){
       const codigo = parseInt(paramId);
       console.log("codigo",paramId);
@@ -74,7 +74,7 @@ export class CardDetailsComponent{
 
   private dadosColetados() {
     console.log("Dados:", this.formGroup.value);
-    this.funcionariaService.alterar({id: this.id, body: this.formGroup.value})
+    this.funcionariaService.obterPorId({id: this.id})
       .subscribe(retorno => {
         console.log("Retorno:", retorno);
         this.router.navigate(["/cardDetalhes"]);
