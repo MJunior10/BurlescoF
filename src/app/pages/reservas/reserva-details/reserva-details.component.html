@@ -1,0 +1,27 @@
+<form
+  [formGroup]="formGroup"
+  (ngSubmit)="onSubmit()"
+  class="form"
+>
+  <div class="formReservaDetalhes">
+    <mat-form-field>
+      <mat-label>Nome Funcionaria:</mat-label>
+      <input matInput formControlName="funcionaria_nome">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Nome Artistico:</mat-label>
+      <input matInput formControlName="funcionaria_apelido">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Supervisor:</mat-label>
+      <input matInput formControlName="funcionaria_supervisor">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Data da Reserva</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="dataReserva">
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <button mat-raised-button color="warning" [routerLink]="['/reserva']" class="btn">Voltar</button>
+  </div>
+</form>

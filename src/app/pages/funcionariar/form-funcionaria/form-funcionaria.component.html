@@ -18,10 +18,10 @@
       </mat-error>
     </mat-form-field>
     <mat-form-field>
-      <mat-label>Apelido:</mat-label>
+      <mat-label>Nome Artistico:</mat-label>
       <input matInput formControlName="apelido">
       <mat-error *ngIf="handleError('apelido', 'required')">
-        Obrigatorio informar apelido
+        Obrigatorio informar Nome Artistico
       </mat-error>
       <mat-error *ngIf="handleError('apelido', 'minlength')">
         Mínimo 3 caracteres

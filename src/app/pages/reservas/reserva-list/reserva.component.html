@@ -1,0 +1,34 @@
+<section class="example-container mat-elevation-z8" tabindex="0">
+  <table mat-table [dataSource]="reservaListaDataSource">
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="nome">
+      <th mat-header-cell *matHeaderCellDef> Nome do Cliente </th>
+      <td mat-cell *matCellDef="let element"> {{element.nomeCliente}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="dataReserva">
+      <th mat-header-cell *matHeaderCellDef> Data de Reserva </th>
+      <td mat-cell *matCellDef="let element"> {{element.dataReserva}} </td>
+    </ng-container>
+
+    <!-- Ação Column -->
+    <ng-container matColumnDef="acao">
+      <th mat-header-cell *matHeaderCellDef> Ação </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-mini-fab color="warning" (click)="confirmarExcluir(element)">
+          <mat-icon>delete_forever</mat-icon>
+        </button>
+        <button mat-mini-fab color="warning" class="btnEditar" [routerLink]="['/reserva',element.id]">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-mini-fab color="warning" class="btnDetalhes" [routerLink]="['/reservaDetalhes',element.id]">
+          <mat-icon>list_alt</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="colunasMostrar; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: colunasMostrar;"></tr>
+  </table>
+</section>

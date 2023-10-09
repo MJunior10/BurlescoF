@@ -1,9 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 
-import {ActivatedRoute, Router, RouterLink} from "@angular/router";
+import {ActivatedRoute, Router, RouterLink, RouterOutlet} from "@angular/router";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatTableDataSource, MatTableModule} from "@angular/material/table";
-import {FuncionariaControllerService} from "../../api/services/funcionaria-controller.service";
 
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {DateAdapter} from "@angular/material/core";
@@ -13,15 +12,18 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {NgIf} from "@angular/common";
 import {MatDialog} from "@angular/material/dialog";
-import {ConfirmationDialog} from "../../core/confirmation-dialog/confirmation-dialog.component";
+import {ReservaControllerService} from "../../../api/services/reserva-controller.service";
+import {MatCardModule} from "@angular/material/card";
+import {MatIconModule} from "@angular/material/icon";
+import {ReservaDto} from "../../../api/models/reserva-dto";
 @Component({
   selector: 'app-card-details',
-  templateUrl: './card-details.component.html',
-  styleUrls: ['./card-details.component.scss'],
+  templateUrl: './reserva-details.component.html',
+  styleUrls: ['./reserva-details.component.scss'],
   standalone: true,
-  imports: [MatExpansionModule, RouterLink, MatTableModule, MatButtonModule, MatDatepickerModule, MatFormFieldModule, MatInputModule, NgIf, ReactiveFormsModule],
+  imports: [MatExpansionModule, RouterLink, MatTableModule, MatButtonModule, MatDatepickerModule, MatFormFieldModule, MatInputModule, NgIf, ReactiveFormsModule, MatCardModule, MatIconModule, RouterOutlet],
 })
-export class CardDetailsComponent{
+export class ReservaDetailsComponent {
   formGroup!: FormGroup;
 
   id!: number;
@@ -31,7 +33,7 @@ export class CardDetailsComponent{
     private router: Router,
     private route: ActivatedRoute,
     private _adapter: DateAdapter<any>,
-    public funcionariaService: FuncionariaControllerService,
+    public reservaService: ReservaControllerService,
     private dialog: MatDialog,
   ) {
     this.createForm();
@@ -40,20 +42,17 @@ export class CardDetailsComponent{
   }
   createForm() {
     this.formGroup = this.formBuilder.group({
-      nome: [{value: null, disabled: true}, Validators.required],
-      apelido: [{value: null, disabled: true}, Validators.required],
-      supervisor: [{value: null, disabled: true}, Validators.required],
-      especialidade: [{value: null, disabled: true}, Validators.required],
-      valorAtendimento: [{value: null, disabled: true}, Validators.required],
-      dataNascimento: [{value: new Date(), disabled: true}, Validators.required],
-
+      funcionaria_nome: [{value: null, disabled: true}, Validators.required],
+      funcionaria_apelido: [{value: null, disabled: true}, Validators.required],
+      funcionaria_supervisor: [{value: null, disabled: true}, Validators.required],
+      dataReserva: [{value: new Date(), disabled: true}, Validators.required],
     });
   }
 
   onSubmit() {
     if (this.formGroup.valid) {
-        this.dadosColetados();
-      }
+      this.dadosColetados();
+    }
   }
 
   private obterDados() {
@@ -61,7 +60,7 @@ export class CardDetailsComponent{
     if (paramId){
       const codigo = parseInt(paramId);
       console.log("codigo",paramId);
-      this.funcionariaService.obterPorId1({id: codigo}).subscribe(
+      this.reservaService.obterPorId({id: codigo}).subscribe(
         retorno => {
           console.log("retorno", retorno);
           this.id = retorno.id;
@@ -71,13 +70,14 @@ export class CardDetailsComponent{
 
     }
   }
-
   private dadosColetados() {
     console.log("Dados:", this.formGroup.value);
-    this.funcionariaService.obterPorId1({id: this.id})
+    this.reservaService.obterPorId({id: this.id})
       .subscribe(retorno => {
         console.log("Retorno:", retorno);
-        this.router.navigate(["/cardDetalhes"]);
+        this.router.navigate(["/reservaDetalhes"]);
       })
   }
+
+
 }

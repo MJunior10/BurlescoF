@@ -1,0 +1,44 @@
+<form
+  [formGroup]="formGroup"
+  (ngSubmit)="onSubmit()"
+  class="form"
+>
+  <div class="formFuncionaria">
+    <h1>Formulário para {{acao}} reserva</h1>
+
+    <mat-form-field>
+      <mat-label>Nome:</mat-label>
+      <input matInput formControlName="nomeCliente">
+      <mat-error *ngIf="handleError('nomeCliente', 'required')">
+        Obrigatorio informar nome
+      </mat-error>
+      <mat-error *ngIf="handleError('nomeCliente', 'minlength')">
+        Mínimo 3 caracteres
+      </mat-error>
+      <mat-error *ngIf="handleError('nomeCliente', 'maxlength')">
+        Máximo 50 caracteres
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Selecionar Funcionaria</mat-label>
+      <mat-select formControlName = "funcionaria_id">
+        <mat-option>Selecione</mat-option>
+        <mat-option *ngFor = "let funcionaria of funcionarias" [value] = "funcionaria.id">{{funcionaria.nome}} </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+
+      <mat-label>Data da Reserva</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="dataReserva">
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-error *ngIf="handleError('dataReserva', 'required')">
+        Data da reserva é Obrigatoria
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="warning" type="submit">Salvar</button>
+    <button mat-raised-button color="warning" [routerLink]="['/reserva']" class="btnCancelar">Cancelar</button>
+  </div>
+</form>

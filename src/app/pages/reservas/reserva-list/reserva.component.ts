@@ -2,24 +2,25 @@ import {Component, OnInit} from '@angular/core';
 import {MatTableDataSource} from "@angular/material/table";
 import {MatDialog} from "@angular/material/dialog";
 import {MatSnackBar} from "@angular/material/snack-bar";
-import {FuncionariaControllerService} from "../../../api/services/funcionaria-controller.service";
 import {
   ConfirmationDialog,
   ConfirmationDialogResult
 } from "../../../core/confirmation-dialog/confirmation-dialog.component";
-import {FuncionariaDto} from "../../../api/models/funcionaria-dto";
+import {ReservaControllerService} from "../../../api/services/reserva-controller.service";
+import {ReservaDto} from "../../../api/models/reserva-dto";
+
 
 
 @Component({
-  selector: 'app-funcionaria',
-  templateUrl: './funcionaria.component.html',
-  styleUrls: ['./funcionaria.component.scss']
+  selector: 'app-reserva',
+  templateUrl: './reserva.component.html',
+  styleUrls: ['./reserva.component.scss']
 })
-export class FuncionariaComponent  implements OnInit {
-  colunasMostrar = ['id', 'nome', 'apelido', 'valorAtendimento', 'supervisor','especialidade', 'dataNascimento','acao'];
-  funcionariaListaDataSource : MatTableDataSource<FuncionariaDto> = new MatTableDataSource<FuncionariaDto>([]);
+export class ReservaComponent implements OnInit {
+  colunasMostrar = ['nome','dataReserva','acao'];
+  reservaListaDataSource : MatTableDataSource<ReservaDto> = new MatTableDataSource<ReservaDto>([]);
   constructor(
-    public funcionariaService: FuncionariaControllerService,
+    public reservaService: ReservaControllerService,
     private dialog: MatDialog,
     private snackBar: MatSnackBar
   ) {
@@ -30,15 +31,15 @@ export class FuncionariaComponent  implements OnInit {
   }
 
   private buscarDados() {
-    this.funcionariaService.listAll1().subscribe(data => {
+    this.reservaService.listAll().subscribe(data => {
       console.log(data);
-      this.funcionariaListaDataSource.data = data;
+      this.reservaListaDataSource.data = data;
     })
   }
 
-  remover(funcionariaDto: FuncionariaDto) {
-    console.log("Removido", funcionariaDto.id);
-    this.funcionariaService.remover1({id: funcionariaDto.id || 0})
+  remover(reservaDto: ReservaDto) {
+    console.log("Removido", reservaDto.id);
+    this.reservaService.remover({id: reservaDto.id || 0})
       .subscribe(retorno => {
           this.buscarDados();
           this.showMensagemSimples("Excluído com sucesso ", 5000);
@@ -55,16 +56,16 @@ export class FuncionariaComponent  implements OnInit {
   }
 
 
-  confirmarExcluir(funcionariaDto: FuncionariaDto) {
+  confirmarExcluir(reservaDto: ReservaDto) {
     const dialogRef = this.dialog.open(ConfirmationDialog, {
       data: {
         titulo: 'Confirmar?',
-        mensagem: `A exclusão de: ${funcionariaDto.nome} ${funcionariaDto.apelido}?`,
+        mensagem: `A exclusão de: ${reservaDto.nomeCliente}?`,
         textoBotoes: {
           ok: 'Confirmar',
           cancel: 'Cancelar',
         },
-        dado: funcionariaDto
+        dado: reservaDto
       },
     });
 

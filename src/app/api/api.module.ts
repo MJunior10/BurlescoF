@@ -4,6 +4,7 @@ import { NgModule, ModuleWithProviders, SkipSelf, Optional } from '@angular/core
 import { HttpClient } from '@angular/common/http';
 import { ApiConfiguration, ApiConfigurationParams } from './api-configuration';
 
+import { ReservaControllerService } from './services/reserva-controller.service';
 import { FuncionariaControllerService } from './services/funcionaria-controller.service';
 
 /**
@@ -14,6 +15,7 @@ import { FuncionariaControllerService } from './services/funcionaria-controller.
   exports: [],
   declarations: [],
   providers: [
+    ReservaControllerService,
     FuncionariaControllerService,
     ApiConfiguration
   ],

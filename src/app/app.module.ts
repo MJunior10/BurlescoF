@@ -21,6 +21,7 @@ import {FormDetailsComponent} from "./pages/form-details/form-details.component"
 import {MatTableModule} from "@angular/material/table";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {CardDetailsComponent} from "./pages/card-details/card-details.component";
+import {ReservasModule} from "./pages/reservas/reservas.module";
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import {CardDetailsComponent} from "./pages/card-details/card-details.component"
     MatIconModule,
     MatDividerModule,
     FuncionariarModule,
+    ReservasModule,
     MatDialogModule,
     MatSnackBarModule,
     MatTableModule,

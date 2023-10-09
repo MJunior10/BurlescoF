@@ -1,0 +1,26 @@
+button{
+  background: #ffa31a !important;
+  max-width: 30px;
+  max-height: 30px;
+  margin-bottom: 10px;
+  margin-top: -20px;
+  margin-left: -40px;
+  position: absolute;
+  }
+
+
+.btnEditar{
+  margin-left: 3px;
+
+  }
+.btnDetalhes{
+  margin-left: 45px;
+
+}
+@media (max-width: 768px) {
+  .botao-responsivo {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+

@@ -14,7 +14,7 @@ import {CardDetailsComponent} from "../card-details/card-details.component";
 })
 export class FormDetailsComponent implements OnInit  {
 
-  colunasMostrar = ['nome', 'apelido', 'acao'];
+  colunasMostrar = ['nome', 'apelido', 'acao','reservar'];
   funcionariaListaDataSource : MatTableDataSource<FuncionariaDto> = new MatTableDataSource<FuncionariaDto>([]);
   constructor(
     public funcionariaService: FuncionariaControllerService,
@@ -27,7 +27,7 @@ export class FormDetailsComponent implements OnInit  {
     this.buscarDados();
   }
   private buscarDados() {
-    this.funcionariaService.listAll().subscribe(data => {
+    this.funcionariaService.listAll1().subscribe(data => {
       console.log(data);
       this.funcionariaListaDataSource.data = data;
     })
