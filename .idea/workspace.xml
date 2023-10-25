@@ -4,44 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152e04f0-177f-40de-a745-5d8fc320844a" name="Changes" comment="DEUS E BOM E O DIABO NAO PRESTA">
-      <change afterPath="$PROJECT_DIR$/src/app/api/models/field-response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/models/message-response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/models/reserva-dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/services/reserva-controller.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/form-reserva/form-reserva.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/form-reserva/form-reserva.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/form-reserva/form-reserva.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-details/reserva-details.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-details/reserva-details.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-details/reserva-details.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/reservas/reservas.module.ts" afterDir="false" />
+    <list default="true" id="152e04f0-177f-40de-a745-5d8fc320844a" name="Changes" comment="CODIGO ADQUIRIU NOVO METODO RESERVA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/api.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/api.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/models.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/models/funcionaria-dados-alteravel-dto.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/services/funcionaria-controller.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/services/funcionaria-controller.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/core/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/card-details/card-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/card-details/card-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/card-details/card-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/card-details/card-details.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/form-funcionaria/form-funcionaria.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/form-reserva/form-reserva.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/form-reserva/form-reserva.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/reserva-details/reserva-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-details/reserva-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +19,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -68,7 +43,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Relacionamento&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/martins/Downloads/Burlesco-Frontend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -169,7 +144,7 @@
       <workItem from="1696450664407" duration="9538000" />
       <workItem from="1696643015983" duration="2825000" />
       <workItem from="1696683658366" duration="3891000" />
-      <workItem from="1696889239008" duration="355000" />
+      <workItem from="1696889239008" duration="5777000" />
     </task>
     <task id="LOCAL-00001" summary="Icon, e alterações iniciais">
       <created>1684714804934</created>
@@ -257,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687559094066</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="CODIGO ADQUIRIU NOVO METODO RESERVA">
+      <option name="closed" value="true" />
+      <created>1696889694608</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1696889694608</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +265,7 @@
     <MESSAGE value="FUNCIONA CARALHO" />
     <MESSAGE value="FÉ EM DEUS QUE ELE E JUSTO EI IRMAO" />
     <MESSAGE value="DEUS E BOM E O DIABO NAO PRESTA" />
-    <option name="LAST_COMMIT_MESSAGE" value="DEUS E BOM E O DIABO NAO PRESTA" />
+    <MESSAGE value="CODIGO ADQUIRIU NOVO METODO RESERVA" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODIGO ADQUIRIU NOVO METODO RESERVA" />
   </component>
 </project>

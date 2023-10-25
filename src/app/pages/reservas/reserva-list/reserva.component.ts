@@ -19,11 +19,14 @@ import {ReservaDto} from "../../../api/models/reserva-dto";
 export class ReservaComponent implements OnInit {
   colunasMostrar = ['nome','dataReserva','acao'];
   reservaListaDataSource : MatTableDataSource<ReservaDto> = new MatTableDataSource<ReservaDto>([]);
+
+
   constructor(
     public reservaService: ReservaControllerService,
     private dialog: MatDialog,
     private snackBar: MatSnackBar
   ) {
+
   }
 
   ngOnInit(): void {
@@ -84,6 +87,7 @@ export class ReservaComponent implements OnInit {
       verticalPosition: 'top',
     });
   }
+
 }
 
 

@@ -61,7 +61,6 @@ export class FormReservaComponent {
   private realizarInclusao(){
     if (this.formGroup.valid) {
       console.log("Dados:",this.formGroup.value);
-
       this.reservaControllerService.incluir({body: this.formGroup.value})
         .subscribe( retorno =>{
           console.log("Retorno:",retorno);

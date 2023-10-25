@@ -28,6 +28,7 @@ export class ReservaDetailsComponent {
 
   id!: number;
 
+
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
@@ -39,6 +40,7 @@ export class ReservaDetailsComponent {
     this.createForm();
     this._adapter.setLocale('pt-br');
     this.obterDados();
+
   }
   createForm() {
     this.formGroup = this.formBuilder.group({
@@ -78,6 +80,8 @@ export class ReservaDetailsComponent {
         this.router.navigate(["/reservaDetalhes"]);
       })
   }
+
+
 
 
 }
