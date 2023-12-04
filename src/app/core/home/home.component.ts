@@ -51,10 +51,7 @@ export class HomeComponent {
 
   sair() {
     this.securityService.invalidate();
-    this.router.navigate(['/home']);
+    this.router.navigate(['/acesso']);
   }
 
-  logar() {
-    this.router.navigate(['/access']);
-  }
 }

@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152e04f0-177f-40de-a745-5d8fc320844a" name="Changes" comment="CODIGO ADQUIRIU NOVO METODO AUTENTICAÇÃO">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="152e04f0-177f-40de-a745-5d8fc320844a" name="Changes" comment="CODIGO ADQUIRIU NOVO METODO AUTENTICAÇÃO E CRIAÇÃO DO SAIR">
       <change beforePath="$PROJECT_DIR$/src/app/core/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/home/home.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/core/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/home/home.component.ts" afterDir="false" />
     </list>
@@ -162,7 +161,7 @@
       <workItem from="1699922987891" duration="655000" />
       <workItem from="1699957786605" duration="2511000" />
       <workItem from="1701296663442" duration="4200000" />
-      <workItem from="1701684766379" duration="615000" />
+      <workItem from="1701684766379" duration="739000" />
     </task>
     <task id="LOCAL-00001" summary="Icon, e alterações iniciais">
       <created>1684714804934</created>
@@ -274,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701684947841</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="CODIGO ADQUIRIU NOVO METODO AUTENTICAÇÃO E CRIAÇÃO DO SAIR">
+      <option name="closed" value="true" />
+      <created>1701685485378</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701685485378</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +308,7 @@
     <MESSAGE value="DEUS E BOM E O DIABO NAO PRESTA" />
     <MESSAGE value="CODIGO ADQUIRIU NOVO METODO RESERVA" />
     <MESSAGE value="CODIGO ADQUIRIU NOVO METODO AUTENTICAÇÃO" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODIGO ADQUIRIU NOVO METODO AUTENTICAÇÃO" />
+    <MESSAGE value="CODIGO ADQUIRIU NOVO METODO AUTENTICAÇÃO E CRIAÇÃO DO SAIR" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODIGO ADQUIRIU NOVO METODO AUTENTICAÇÃO E CRIAÇÃO DO SAIR" />
   </component>
 </project>
