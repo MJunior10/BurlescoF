@@ -38,6 +38,14 @@
       <mat-icon>description</mat-icon>
       <span>Reserva</span>
     </button>
+    <button mat-button class="menu-button" *ngIf="logado()" (click)="sair()">
+      <mat-icon>logout</mat-icon>
+      <span>Sair</span>
+    </button>
+    <button mat-button class="menu-button" *ngIf="!logado()" (click)="logar()">
+      <mat-icon>login</mat-icon>
+      <span>login</span>
+    </button>
 
     <mat-divider></mat-divider>
 
