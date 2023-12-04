@@ -2,11 +2,13 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: white;}
 @font-face {
   font-family: 'Borgens Burlesco';
   src: url('~src/assets/borgens_burlesque/Borgens Burlesque.ttf') format('truetype');
+
 }
 //body{
-//  background: #2f2f2f;
+//  color:white;
+//  //background: #2f2f2f;
 //}

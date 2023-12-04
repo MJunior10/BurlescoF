@@ -6,6 +6,7 @@ import { ApiConfiguration, ApiConfigurationParams } from './api-configuration';
 
 import { ReservaControllerService } from './services/reserva-controller.service';
 import { FuncionariaControllerService } from './services/funcionaria-controller.service';
+import { AuthApiService } from './services/auth-api.service';
 
 /**
  * Module that provides all services and configuration.
@@ -17,6 +18,7 @@ import { FuncionariaControllerService } from './services/funcionaria-controller.
   providers: [
     ReservaControllerService,
     FuncionariaControllerService,
+    AuthApiService,
     ApiConfiguration
   ],
 })

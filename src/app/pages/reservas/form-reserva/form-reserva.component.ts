@@ -65,6 +65,7 @@ export class FormReservaComponent {
         .subscribe( retorno =>{
           console.log("Retorno:",retorno);
           this.confirmarAcao(retorno, this.ACAO_INCLUIR);
+          retorno.dataReserva = `${retorno.dataReserva}T03:00:00.000Z`;
           this.router.navigate(["/reserva"]);
         }, erro =>{
           console.log("Erro:"+erro);
@@ -110,6 +111,7 @@ export class FormReservaComponent {
           this.acao = this.ACAO_EDITAR;
           console.log("retorno", retorno);
           this.id = retorno.id;
+          retorno.dataReserva = `${retorno.dataReserva}T03:00:00.000Z`;
           this.formGroup.patchValue(retorno);
         }
       )

@@ -6,6 +6,7 @@ import {HomeReservaComponent} from "./home-reserva/home.reserva.component";
 import {FormDetailsComponent} from "../form-details/form-details.component";
 import {CardDetailsComponent} from "../card-details/card-details.component";
 import {ReservaDetailsComponent} from "./reserva-details/reserva-details.component";
+import {SecurityGuard} from "../../arquitetura/security/security.guard";
 export const reservaRoutes: Routes = [
   {
     path: "reserva",
@@ -13,11 +14,13 @@ export const reservaRoutes: Routes = [
     children: [
       {
         path: "",
-        component:ReservaComponent
+        component:ReservaComponent,
       },
       {
         path: "novo",
-        component: FormReservaComponent
+        component: FormReservaComponent,
+        canActivate: [SecurityGuard],
+        data: {security: {roles: ['ROLE_ADMIN']}}
       },
       {
         path: ":codigo",

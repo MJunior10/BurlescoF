@@ -5,18 +5,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="152e04f0-177f-40de-a745-5d8fc320844a" name="Changes" comment="CODIGO ADQUIRIU NOVO METODO RESERVA">
+      <change afterPath="$PROJECT_DIR$/src/LBURLESCO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/models/auth-dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/models/credencial-dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/models/usuario-senha-dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/services/auth-api.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/app.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/autenticacao/autenticacao-guard.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/autenticacao/autenticacao.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/autenticacao/autenticacao.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/autenticacao/autenticacao.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/autenticacao/autenticacao.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/autenticacao/autenticacao.routing.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/autenticacao/autenticacao.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/loader-dialog/loader-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/loader-dialog/loader-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/loader/loader.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/loader/loader.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/loader/loader.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/message/alert-message/alert-message.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/message/alert-message/alert-message.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/message/alert-message/alert-message.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/message/confirm-mesage/confirm-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/message/confirm-mesage/confirm-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/message/message.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/message/message.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/security/User.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/security/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/security/credential.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/security/security.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/security/security.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/security/security.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/arquitetura/security/security.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/BURLESQUE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/LOGOBURLESCO.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BURLESCO-ICON.PNG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/api.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/api.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/models.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/core/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/core/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/home/home.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionariar-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionariar-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/home/home.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/form-reserva/form-reserva.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/form-reserva/form-reserva.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/reserva-details/reserva-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-details/reserva-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/reserva-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leque.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -59,15 +115,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app" />
+      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app\arquiteture\security" />
+      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app\arquiteture" />
+      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app\arquiteture\authentication" />
       <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app\pages\reservas" />
-      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app\pages" />
-      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app\arquiteture\security" />
+      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app\arquiteture\authentication" />
+      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app\arquiteture" />
+      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\assets" />
       <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app\pages\Detalhar" />
-      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app\pages" />
-      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app\pages\funcionariar" />
-      <recent name="C:\Users\martins\Downloads\Burlesco-Frontend\src\app\core" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
@@ -145,6 +204,17 @@
       <workItem from="1696643015983" duration="2825000" />
       <workItem from="1696683658366" duration="3891000" />
       <workItem from="1696889239008" duration="5777000" />
+      <workItem from="1698266894577" duration="566000" />
+      <workItem from="1698272659233" duration="4907000" />
+      <workItem from="1698444960417" duration="3028000" />
+      <workItem from="1698450215572" duration="75000" />
+      <workItem from="1698450344628" duration="1287000" />
+      <workItem from="1698703809416" duration="1212000" />
+      <workItem from="1699482012477" duration="2753000" />
+      <workItem from="1699913745467" duration="5078000" />
+      <workItem from="1699922987891" duration="655000" />
+      <workItem from="1699957786605" duration="2511000" />
+      <workItem from="1701296663442" duration="4200000" />
     </task>
     <task id="LOCAL-00001" summary="Icon, e alterações iniciais">
       <created>1684714804934</created>
@@ -240,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696889694608</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="CODIGO ADQUIRIU NOVO METODO RESERVA">
+      <option name="closed" value="true" />
+      <created>1698266976347</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698266976347</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

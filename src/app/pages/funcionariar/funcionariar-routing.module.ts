@@ -5,6 +5,7 @@ import {FuncionariaComponent} from "./funcionaria-list/funcionaria.component";
 import {HomeFuncionariaComponent} from "./home/home.component";
 import {FormDetailsComponent} from "../form-details/form-details.component";
 import {CardDetailsComponent} from "../card-details/card-details.component";
+import {SecurityGuard} from "../../arquitetura/security/security.guard";
 export const funcionariaRoutes: Routes = [
   {
     path: "funcionariar",
@@ -12,11 +13,13 @@ export const funcionariaRoutes: Routes = [
     children: [
       {
         path: "",
-        component:FuncionariaComponent
+        component:FuncionariaComponent,
       },
       {
         path: "novo",
-        component: FormFuncionariaComponent
+        component: FormFuncionariaComponent,
+        canActivate: [SecurityGuard],
+        data: {security: {roles: ['ROLE_ADMIN']}}
       },
       {
         path: ":codigo",

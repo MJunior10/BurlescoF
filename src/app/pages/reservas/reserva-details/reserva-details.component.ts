@@ -66,6 +66,7 @@ export class ReservaDetailsComponent {
         retorno => {
           console.log("retorno", retorno);
           this.id = retorno.id;
+          retorno.dataReserva = `${retorno.dataReserva}T03:00:00.000Z`;
           this.formGroup.patchValue(retorno);
         }
       )

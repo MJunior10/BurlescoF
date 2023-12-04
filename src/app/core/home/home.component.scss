@@ -1,6 +1,6 @@
 mat-toolbar {
-  background: #ffa31a;
-  color: #000000;
+  background: #000000;
+  color: #ffffff;
   //border-radius: 10px;
   font-size: 500px;
 }
@@ -9,8 +9,8 @@ mat-sidenav {
   margin: 16px;
   width: 200px;
   border-right: none;
-  background: #ffa31a;
-  color: #000000;
+  background: #000000;
+  color: #ffffff;
   border-radius: 10px;
   padding: 16px 0;
   text-align: center;
@@ -40,7 +40,7 @@ mat-sidenav-container {
   align-items: center;
   justify-content: flex-start;
   font-size: 1rem;
-  color: #fcfcfc;
+  color: #fcfcfc !important;
 
   mat-icon {
     margin-right: 8px;
@@ -68,12 +68,13 @@ mat-sidenav-container {
 mat-divider {
   margin-top: 16px;
   margin-bottom: 16px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0);
 }
 a.link-mal-logo {
   width: 190px;
   text-decoration: none;
   font-size: 2.5rem;
   font-family: Borgens Burlesco, serif;
-  color: #000000;
+  color: #ffffff;
 }
+
