@@ -1,6 +1,21 @@
 button{
   background: #ffa31a !important;
 }
+.Pesquisar{
+
+  .escrever{
+
+      height: 10px;
+  }
+  .btnPesquisar{
+    position: relative;
+    left: 15px;
+  }
+  .btnLimpar{
+    position: relative;
+    left: 30px;
+  }
+}
 
 
 

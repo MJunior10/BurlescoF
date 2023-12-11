@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="152e04f0-177f-40de-a745-5d8fc320844a" name="Changes" comment="CODIGO ADQUIRIU NOVO METODO AUTENTICAÇÃO E CRIAÇÃO DO SAIR">
-      <change beforePath="$PROJECT_DIR$/src/app/core/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/core/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/services/funcionaria-controller.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/services/funcionaria-controller.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/form-details/form-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/funcionariar/funcionaria-list/funcionaria.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/form-reserva/form-reserva.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/form-reserva/form-reserva.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/home-reserva/home.reserva.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/reserva-details/reserva-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-details/reserva-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/reservas/reserva-list/reserva.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +59,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Relacionamento&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/martins/Downloads/Burlesco-Frontend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/martins/Downloads/BURLESCO&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -161,7 +173,10 @@
       <workItem from="1699922987891" duration="655000" />
       <workItem from="1699957786605" duration="2511000" />
       <workItem from="1701296663442" duration="4200000" />
-      <workItem from="1701684766379" duration="739000" />
+      <workItem from="1701684766379" duration="1460000" />
+      <workItem from="1701724524036" duration="6368000" />
+      <workItem from="1701787490263" duration="10000" />
+      <workItem from="1701901881754" duration="4094000" />
     </task>
     <task id="LOCAL-00001" summary="Icon, e alterações iniciais">
       <created>1684714804934</created>
@@ -281,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701685485378</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="CODIGO ADQUIRIU NOVO METODO AUTENTICAÇÃO E CRIAÇÃO DO SAIR">
+      <option name="closed" value="true" />
+      <created>1701685623978</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701685623978</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -84,5 +84,15 @@ export class ReservaDetailsComponent {
 
 
 
+  // private dataReserva() {
+  //   console.log("Dados:", this.formGroup.value);
+  //   this.reservaService.pesquisar({body: this.reservaDTO})
+  //     .subscribe(retorno => {
+  //       console.log("Retorno:", retorno);
+  //       this.router.navigate(["/reservaDetalhes"]);
+  //     })
+  // }
+
+
 
 }

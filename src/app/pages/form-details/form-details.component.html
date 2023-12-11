@@ -1,3 +1,31 @@
+<form
+  [formGroup]="formGroup"
+  class="form"
+>
+  <div class = "Pesquisar">
+    <mat-form-field>
+      <mat-label class="escrever">Nome Funcionaria:</mat-label>
+      <input matInput formControlName="nome">
+      <mat-error *ngIf="handleError('nome', 'required')">
+        Obrigatorio informar nome
+      </mat-error>
+      <mat-error *ngIf="handleError('nome', 'minlength')">
+        Mínimo 3 caracteres
+      </mat-error>
+      <mat-error *ngIf="handleError('nome', 'maxlength')">
+        Máximo 50 caracteres
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-icon-button color="warning" class="btnPesquisar" (click)="pesquisar()">
+      <mat-icon>search</mat-icon>
+    </button>
+
+    <button mat-icon-button color="warning" class="btnLimpar" (click)="buscarDados()">
+      <span class="material-icons"> search_off </span>
+    </button>
+  </div>
+</form>
 <section class="example-container mat-elevation-z8" tabindex="0">
   <table mat-table [dataSource]="funcionariaListaDataSource">
 

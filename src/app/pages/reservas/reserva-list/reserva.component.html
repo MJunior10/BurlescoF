@@ -1,3 +1,22 @@
+<form
+  [formGroup]="formGroup"
+  class="form"
+>
+  <div class = "Toggle">
+<mat-label>Data da Reserva</mat-label>
+<mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+<input matInput [matDatepicker]="picker" formControlName="dataReserva">
+<mat-datepicker #picker></mat-datepicker>
+
+<button mat-icon-button color="warning" class="btnPesquisar" (click)="pesquisar()">
+  <mat-icon>search</mat-icon>
+</button>
+
+    <button mat-icon-button color="warning" class="btnLimpar" (click)="buscarDados()">
+      <span class="material-icons"> search_off </span>
+    </button>
+  </div>
+</form>
 <section class="example-container mat-elevation-z8" tabindex="0">
   <table mat-table [dataSource]="reservaListaDataSource">
 

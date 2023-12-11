@@ -17,6 +17,36 @@ button{
   margin-left: 45px;
 
 }
+.Toggle{
+  .btnPesquisar{
+    position: relative;
+    top: 15px;
+    left: 50px;
+
+  }
+  mat-icon{
+    position: relative;
+    right: 9px;
+    bottom: 8px;
+  }
+  mat-datepicker-toggle{
+    position: relative;
+    top: 5px;
+    right: 5px;
+    margin-right: -5px;
+  }
+  .btnLimpar{
+    position: relative;
+    top: 15px;
+    left: 100px;
+
+  }
+  .material-icons{
+    position: relative;
+    right: 9px;
+    bottom: 8px;
+  }
+}
 @media (max-width: 768px) {
   .botao-responsivo {
     padding: 8px 16px;

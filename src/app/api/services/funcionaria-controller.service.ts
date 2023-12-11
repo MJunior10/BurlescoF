@@ -312,4 +312,61 @@ export class FuncionariaControllerService extends BaseService {
     );
   }
 
+  /**
+   * Path part for operation pesquisar1
+   */
+  static readonly Pesquisar1Path = '/api/v1/funcionaria/pesquisar';
+
+  /**
+   * Busca entidade pelos dados informados
+   *
+   * This method provides access to the full `HttpResponse`, allowing access to response headers.
+   * To access only the response body, use `pesquisar1()` instead.
+   *
+   * This method sends `application/json` and handles request body of type `application/json`.
+   */
+  pesquisar1$Response(params: {
+    body: FuncionariaDto
+  },
+  context?: HttpContext
+
+): Observable<StrictHttpResponse<Array<FuncionariaDto>>> {
+
+    const rb = new RequestBuilder(this.rootUrl, FuncionariaControllerService.Pesquisar1Path, 'post');
+    if (params) {
+      rb.body(params.body, 'application/json');
+    }
+
+    return this.http.request(rb.build({
+      responseType: 'json',
+      accept: 'application/json',
+      context: context
+    })).pipe(
+      filter((r: any) => r instanceof HttpResponse),
+      map((r: HttpResponse<any>) => {
+        return r as StrictHttpResponse<Array<FuncionariaDto>>;
+      })
+    );
+  }
+
+  /**
+   * Busca entidade pelos dados informados
+   *
+   * This method provides access only to the response body.
+   * To access the full response (for headers, for example), `pesquisar1$Response()` instead.
+   *
+   * This method sends `application/json` and handles request body of type `application/json`.
+   */
+  pesquisar1(params: {
+    body: FuncionariaDto
+  },
+  context?: HttpContext
+
+): Observable<Array<FuncionariaDto>> {
+
+    return this.pesquisar1$Response(params,context).pipe(
+      map((r: StrictHttpResponse<Array<FuncionariaDto>>) => r.body as Array<FuncionariaDto>)
+    );
+  }
+
 }

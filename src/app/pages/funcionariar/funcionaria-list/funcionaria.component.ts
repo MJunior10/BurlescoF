@@ -8,6 +8,7 @@ import {
   ConfirmationDialogResult
 } from "../../../core/confirmation-dialog/confirmation-dialog.component";
 import {FuncionariaDto} from "../../../api/models/funcionaria-dto";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 
 @Component({
@@ -16,14 +17,17 @@ import {FuncionariaDto} from "../../../api/models/funcionaria-dto";
   styleUrls: ['./funcionaria.component.scss']
 })
 export class FuncionariaComponent  implements OnInit {
+
   colunasMostrar = ['id', 'nome', 'apelido', 'valorAtendimento', 'supervisor','especialidade', 'dataNascimento','acao'];
   funcionariaListaDataSource : MatTableDataSource<FuncionariaDto> = new MatTableDataSource<FuncionariaDto>([]);
   constructor(
+
     public funcionariaService: FuncionariaControllerService,
     private dialog: MatDialog,
     private snackBar: MatSnackBar
   ) {
   }
+
 
   ngOnInit(): void {
     this.buscarDados();
@@ -83,6 +87,9 @@ export class FuncionariaComponent  implements OnInit {
       verticalPosition: 'top',
     });
   }
+
+
+
 }
 
 
